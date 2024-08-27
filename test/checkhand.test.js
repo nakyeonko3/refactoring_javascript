@@ -3,14 +3,9 @@ var mocha = require("mocha");
 var describe = mocha.describe;
 var it = mocha.it;
 
+const isPair = function () {};
 const checkHand = function (hand) {
-  if (
-    hand[0] === "2-H" &&
-    hand[1] === "3-C" &&
-    hand[2] === "4-D" &&
-    hand[3] === "5-H" &&
-    hand[4] === "2-C"
-  ) {
+  if (isPair()) {
     return "pair";
   } else {
     return "three of a kind";
