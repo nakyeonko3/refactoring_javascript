@@ -18,7 +18,10 @@ const checkHand = function (hand) {
 };
 
 describe("checkHand", () => {
-  it("should return 'pair'", () => {});
+  it("should return 'pair'", function () {
+    const result = isPair(["2-H", "3-C", "4-D", "5-H", "2-C"]);
+    wish(result);
+  });
 
   it("should return 'three of a kind'", () => {
     expect(checkHand(["3-H", "3-C", "3-D", "5-H", "2-H"])).to.equal(
